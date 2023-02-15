@@ -35,6 +35,12 @@ unsigned long tiempo, elap;
 void IRAM_ATTR irq();
 void initI2C(), tick();
 
+ typedef struct struct_message
+ {
+   float valor[30];
+ } struct_message;
+
+struct_message energia;
 
 void setup()
 {
